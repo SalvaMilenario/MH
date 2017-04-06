@@ -12,14 +12,20 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include "Knn.h"
 
 using namespace std;
 
 /*
  * 
  */
-int main(int argc, char** argv) {
-
+int main(int argc, char** argv) 
+{
+    
+    Knn sonar(argv[1]);
+    Knn spambase(argv[2]);
+    Knn wdbc(argv[3]);
     return 0;
 }
 

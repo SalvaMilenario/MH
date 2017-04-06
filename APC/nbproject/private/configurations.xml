@@ -25,8 +25,16 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" 2</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" 
+/home/salva/NetBeansProjects/MH/APC/sonar.arff
+/home/salva/NetBeansProjects/MH/APC/spambase-460.arff
+/home/salva/NetBeansProjects/MH/APC/wdbc.arff</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <runcommand>"${OUTPUT_PATH}" 
+/home/salva/NetBeansProjects/MH/APC/sonar.arff
+/home/salva/NetBeansProjects/MH/APC/spambase-460.arff
+/home/salva/NetBeansProjects/MH/APC/wdbc.arff</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
