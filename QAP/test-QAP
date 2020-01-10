@@ -1,0 +1,32 @@
+#!/bin/csh -vx
+
+@ i = 1
+while ( $i < 6 )
+	echo "Ejecucion con semilla $i" >> salidaMH.txt
+	./bin/qap Instacias/chr20b.dat Instacias/chr20b.sln $i >> salidaMH.txt
+	./bin/qap Instacias/chr22a.dat Instacias/chr22a.sln $i >> salidaMH.txt
+	./bin/qap Instacias/els19.dat Instacias/els19.sln $i >> salidaMH.txt
+
+	./bin/qap Instacias/esc32b.dat Instacias/esc32b.sln $i >> salidaMH.txt
+	./bin/qap Instacias/kra30b.dat Instacias/kra30b.sln $i >> salidaMH.txt
+	./bin/qap Instacias/lipa90b.dat Instacias/lipa90b.sln $i >> salidaMH.txt
+
+	./bin/qap Instacias/nug25.dat Instacias/nug25.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko56.dat Instacias/sko56.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko64.dat Instacias/sko64.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko72.dat Instacias/sko72.sln $i >> salidaMH.txt
+
+	./bin/qap Instacias/sko100a.dat Instacias/sko100a.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko100b.dat Instacias/sko100b.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko100c.dat Instacias/sko100c.sln $i >> salidaMH.txt
+
+	./bin/qap Instacias/sko100d.dat Instacias/sko100d.sln $i >> salidaMH.txt
+	./bin/qap Instacias/sko100e.dat Instacias/sko100e.sln $i >> salidaMH.txt
+	./bin/qap Instacias/tai30b.dat Instacias/tai30b.sln $i >> salidaMH.txt
+
+	./bin/qap Instacias/tai50b.dat Instacias/tai50b.sln $i >> salidaMH.txt
+	./bin/qap Instacias/tai60a.dat Instacias/tai60a.sln $i >> salidaMH.txt
+	./bin/qap Instacias/tai256c.dat Instacias/tai256c.sln $i >> salidaMH.txt
+	./bin/qap Instacias/tho150.dat Instacias/tho150.sln $i >> salidaMH.txt
+@ i+= 1
+end
