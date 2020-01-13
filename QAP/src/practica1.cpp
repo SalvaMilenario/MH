@@ -511,15 +511,19 @@ int main(int argc, char** argv)
     vector <Solucion*> poblacion;
     if (argc == 4)
         rd = new Random(atoi(argv[3])*170417);
-    else
+    else if (argc == 3)
         rd = new Random(clock());
+    else
+    {
+        cout << "Numero insuficiente de argumentos ./qap [problema] [solucion_optima_conocida] [semilla del Random]";
+        return -1;
+    }
+        
     int intParaNada=0;
-    //creo y guardo el problema y la solucion optima
+    //creo, guardo el problema y la solucion optima
     Problema *qap;
     qap = new Problema((argv[1]));
     Solucion *laOptima = new Solucion(qap, argv[2]);
-    
-    //cout << (argv[1]) << endl;
     
     //gredy
     starTime(start_time);
